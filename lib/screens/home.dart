@@ -20,36 +20,38 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       backgroundColor: const Color(0xFFE5E5FF),
-      body: Column(
-        children: <Widget>[
-          // Profile Widget
-          Container (
-            width: deviceWidth,
-            height: deviceHeight * 0.15,
-            child: Profile(),
-          ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            // Profile Widget
+            Container (
+              width: deviceWidth,
+              height: deviceHeight * 0.15,
+              child: Profile(),
+            ),
 
-          // Wallet Widget
-          Container (
-            width: deviceWidth,
-            height: deviceHeight * 0.2,
-            child: Wallet(),
-          ),
+            // Wallet Widget
+            Container (
+              width: deviceWidth,
+              height: deviceHeight * 0.2,
+              child: Wallet(),
+            ),
 
-          // 주요 지수 Widget
-          Container (
-            width: deviceWidth,
-            height: deviceHeight * 0.25,
-            child: MajorIndices(),
-          ),
+            // 주요 지수 Widget
+            Container (
+              width: deviceWidth,
+              height: deviceHeight * 0.25,
+              child: MajorIndices(),
+            ),
 
-          // 인기 종목 Widget
-          Container (
-            width: deviceWidth,
-            height: deviceHeight * 0.4,
-            child: PopularList(),
-          )
-        ],
+            // 인기 종목 Widget
+            Container (
+              width: deviceWidth,
+              height: deviceHeight * 0.4,
+              child: PopularList(),
+            )
+          ],
+        ),
       ),
     );
   }
