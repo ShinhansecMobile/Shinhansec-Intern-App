@@ -32,8 +32,10 @@ class _PopularListViewState extends State<PopularListView> {
 
         return Column(
           children: rowItems.map((item) {
+            int ranking = popularDataList.indexOf(item) + 1;
+
             return Expanded(
-              child: PopularListTile(popularData: item),
+              child: PopularListTile(popularData: item, ranking: ranking,),
             );
           }).toList(),
         );
