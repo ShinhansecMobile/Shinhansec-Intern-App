@@ -26,11 +26,25 @@ class _PopularListTileState extends State<PopularListTile> {
       width: MediaQuery.of(context).size.width,
       child: Card(
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('${widget.ranking}'),
-            widget.popularData.stockIcon,
-            Text(widget.popularData.stockName),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(right: 5),
+                  child: Text('${widget.ranking}'),
+                ),
+                Container(
+                  margin: const EdgeInsets.only(right: 5),
+                  child: widget.popularData.stockIcon,
+                ),
+                Container(
+                  child: Text(widget.popularData.stockName),
+                ),
+              ],
+            ),
             Column(
+            mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(widget.popularData.stockPrice.toString()),
                 Text(widget.popularData.stockProfit.toString()),
@@ -39,17 +53,6 @@ class _PopularListTileState extends State<PopularListTile> {
           ],
         )
       )
-
-  //     child: ListTile(
-  //       leading: widget.popularData.stockIcon,
-  //       title: Text(widget.popularData.stockName),
-  //       subtitle: Text(widget.popularData.stockPrice.toString()),
-  // /*      onTap: () {
-  //         setState(() {
-  //
-  //         });
-  //       }, TODO : ADD Dialog Event */
-  //     ),
-    );
+    ); // TODO : ADD Dialog Event */
   }
 }
