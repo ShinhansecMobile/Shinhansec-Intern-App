@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PopularData {
-  Icon stockIcon;
-  String stockName;
-  int stockPrice;
-  int stockProfit;
-
-  PopularData({required this.stockIcon, required this.stockName, required this.stockPrice, required this.stockProfit});
-}
+import '../models/popular_data.dart';
 
 class PopularListTile extends StatefulWidget {
   final PopularData popularData;

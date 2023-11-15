@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../models/popular_data.dart';
 import 'popular_list_tile.dart';
 
 class PopularListView extends StatefulWidget {
