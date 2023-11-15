@@ -13,13 +13,21 @@ class _PopularListState extends State<PopularList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.green, // 배경색 설정
+      color: Colors.green,
+      margin: const EdgeInsets.fromLTRB(31, 0, 31, 0), // 배경색 설정
       child: const Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget> [
-          Text('Popular List'),
+          Text(
+            '인기',
+            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
+          ),
           Expanded(
             child: PopularListView(),
           ),
+          Padding(
+            padding: EdgeInsets.only(bottom: 17),
+          )
         ],
       ),
     );

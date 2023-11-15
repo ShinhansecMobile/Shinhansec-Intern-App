@@ -23,7 +23,7 @@ class _PopularListTileState extends State<PopularListTile> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
+      width: MediaQuery.of(context).size.width - 62,
       child: Card(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
