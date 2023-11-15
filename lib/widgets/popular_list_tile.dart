@@ -25,6 +25,8 @@ class _PopularListTileState extends State<PopularListTile> {
     return Container(
       width: MediaQuery.of(context).size.width - 62,
       child: Card(
+        elevation: 0,
+        color: const Color(0xFFE5E5FF),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
