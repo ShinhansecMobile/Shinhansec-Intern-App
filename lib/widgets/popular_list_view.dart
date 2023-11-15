@@ -18,30 +18,26 @@ class _PopularListViewState extends State<PopularListView> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: popularDataList.length,
-      itemBuilder: (context, index) {
-        return PopularListTile(popularData: popularDataList[index]);
+      scrollDirection: Axis.horizontal, // 가로 스크롤 설정
+      itemCount: (popularDataList.length / 5).ceil(), // 한 행당 5개씩 배치
+      itemBuilder: (context, rowIndex) {
+        int startIndex = rowIndex * 5;
+        int endIndex = (rowIndex + 1) * 5;
+
+        if (endIndex > popularDataList.length) {
+          endIndex = popularDataList.length;
+        }
+
+        List<PopularData> rowItems = popularDataList.sublist(startIndex, endIndex);
+
+        return Column(
+          children: rowItems.map((item) {
+            return Expanded(
+              child: PopularListTile(popularData: item),
+            );
+          }).toList(),
+        );
       },
-//      scrollDirection: Axis.horizontal, // 가로 스크롤 설정
-      // itemCount: (popularDataList.length / 5).ceil(), // 한 행당 5개씩 배치
-      // itemBuilder: (context, rowIndex) {
-      //   int startIndex = rowIndex * 5;
-      //   int endIndex = (rowIndex + 1) * 5;
-      //
-      //   if (endIndex > popularDataList.length) {
-      //     endIndex = popularDataList.length;
-      //   }
-      //
-      //   List<PopularData> rowItems = popularDataList.sublist(startIndex, endIndex);
-      //
-      //   return Row(
-      //     children: rowItems.map((item) {
-      //       return Expanded(
-      //         child: PopularListCard(popularData: item),
-      //       );
-      //     }).toList(),
-      //   );
-      // },
     );
   }
 }

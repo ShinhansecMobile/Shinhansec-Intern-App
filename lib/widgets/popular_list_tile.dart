@@ -21,15 +21,18 @@ class PopularListTile extends StatefulWidget {
 class _PopularListTileState extends State<PopularListTile> {
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: widget.popularData.stockIcon,
-      title: Text(widget.popularData.stockName),
-      subtitle: Text(widget.popularData.stockPrice.toString()),
-/*      onTap: () {
-        setState(() {
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      child: ListTile(
+        leading: widget.popularData.stockIcon,
+        title: Text(widget.popularData.stockName),
+        subtitle: Text(widget.popularData.stockPrice.toString()),
+  /*      onTap: () {
+          setState(() {
 
-        });
-      }, TODO : ADD Dialog Event */
+          });
+        }, TODO : ADD Dialog Event */
+      ),
     );
   }
 }
