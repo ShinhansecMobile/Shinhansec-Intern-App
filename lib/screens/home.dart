@@ -40,7 +40,7 @@ class _HomeState extends State<Home> {
             // 주요 지수 Widget
             Container (
               width: deviceWidth,
-              height: deviceHeight * 0.28,
+              height: deviceHeight * 0.31,
               child: MajorIndices(),
             ),
 
