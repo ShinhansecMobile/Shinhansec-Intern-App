@@ -33,14 +33,14 @@ class _HomeState extends State<Home> {
             // Wallet Widget
             Container (
               width: deviceWidth,
-              height: deviceHeight * 0.2,
+              height: deviceHeight * 0.17,
               child: Wallet(),
             ),
 
             // 주요 지수 Widget
             Container (
               width: deviceWidth,
-              height: deviceHeight * 0.25,
+              height: deviceHeight * 0.28,
               child: MajorIndices(),
             ),
 
