@@ -2,22 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:h_stock/chart/kosdaq_mini_chart.dart';
 import 'package:h_stock/chart/kospi_mini_chart.dart';
 
+import '../chart/modal_chart.dart';
+
+
 
 class KospiWidget extends StatelessWidget {
   const KospiWidget({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
       child: InkWell(
-        // onTap: () {
-        //   Navigator.push(
-        //       context, MaterialPageRoute(builder: (context) => Stock('kospi')));
-        // },
+        onTap: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return KospiModal(); // ChartPage를 모달에 표시될 페이지로 사용
+            },
+          );
+        },
         child: Container(
           decoration: BoxDecoration(
             color: Color.fromRGBO(255, 255, 255, 0.60),
-            //color: const Color(0xfff2f3f5),
             borderRadius: BorderRadius.circular(20),
           ),
           child: Padding(
@@ -41,8 +48,7 @@ class KospiWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-                // 차트
-                KOSPIChart(),
+                KOSPIChart(),// 차트를 여기에 두면 누르면 차트가 모달로 뜨게 됩니다.
               ],
             ),
           ),
@@ -59,10 +65,14 @@ class KosdaqWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: InkWell(
-        // onTap: () {
-        //   Navigator.push(context,
-        //       MaterialPageRoute(builder: (context) => Stock('kosdaq')));
-        // },
+        onTap: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (BuildContext context) {
+              return KosdaqModal(); // ChartPage를 모달에 표시될 페이지로 사용
+            },
+          );
+        },
         child: Container(
           decoration: BoxDecoration(
             color: Color.fromRGBO(255, 255, 255, 0.60),

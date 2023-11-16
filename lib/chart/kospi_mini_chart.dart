@@ -64,7 +64,15 @@ class KOSPIChart extends StatelessWidget {
     ChartData('2023/10/31', 2277.99),
     ChartData('2023/11/01', 2301.56),
     ChartData('2023/11/02', 2343.12),
-    ChartData('2023/11/03', 2368.34)
+    ChartData('2023/11/03', 2368.34),
+    ChartData('2023/11/06', 2502.32),
+    ChartData('2023/11/07', 2443.96),
+    ChartData('2023/11/08', 2421.61),
+    ChartData('2023/11/09', 2427.08),
+    ChartData('2023/11/10', 2409.66),
+    ChartData('2023/11/13', 2403.73),
+    ChartData('2023/11/14', 2433.25),
+    ChartData('2023/11/15', 2486.67),
   ];
 
   @override

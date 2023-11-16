@@ -64,7 +64,15 @@ class KOSDAQChart extends StatelessWidget {
     ChartData('2023/10/31',736.10),
     ChartData('2023/11/01',739.23),
     ChartData('2023/11/02',772.84),
-    ChartData('2023/11/03',782.05)
+    ChartData('2023/11/03',782.05),
+    ChartData('2023/11/06', 839.45),
+    ChartData('2023/11/07', 823.47),
+    ChartData('2023/11/08', 811.02),
+    ChartData('2023/11/09', 802.87),
+    ChartData('2023/11/10', 789.31),
+    ChartData('2023/11/13', 774.42),
+    ChartData('2023/11/14', 794.19),
+    ChartData('2023/11/15', 809.36),
   ];
 
   @override
