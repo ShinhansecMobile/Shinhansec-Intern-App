@@ -14,7 +14,7 @@ class _ProfileState extends State<Profile> {
       //color: Colors.pink,
       color: Color(0xFFE5E5FF),
       padding: EdgeInsets.fromLTRB(5, 20, 0, 0),
-      margin: EdgeInsets.symmetric(horizontal: 35, vertical: 10),
+      margin: EdgeInsets.symmetric(horizontal: 31, vertical: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -50,7 +50,7 @@ class _ProfileState extends State<Profile> {
           ),
 
           Padding(
-            padding: EdgeInsets.fromLTRB(0, 35, 5, 0),
+            padding: EdgeInsets.fromLTRB(0, 31, 5, 0),
             child: IconButton(
               padding: EdgeInsets.zero, // 추가: IconButton의 패딩을 없애고,
               icon: Icon(Icons.notifications_none),

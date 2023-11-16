@@ -15,16 +15,16 @@ class _MajorIndicesState extends State<MajorIndices> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.fromLTRB(40, 0, 0, 10),
+          padding: EdgeInsets.fromLTRB(31, 23, 31, 16),
           child: Text(
             '주요 지수',
-            style: TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w800),
           ),
         ),
 
         Expanded(
           child: Container(
-            margin: EdgeInsets.fromLTRB(40, 0, 40, 20),
+            margin: EdgeInsets.fromLTRB(31, 0, 31, 23),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
