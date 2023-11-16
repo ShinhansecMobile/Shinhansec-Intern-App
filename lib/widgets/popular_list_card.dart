@@ -3,17 +3,17 @@ import 'package:flutter/material.dart';
 import '../models/popular_data.dart';
 import 'popular_dialog.dart';
 
-class PopularListTile extends StatefulWidget {
+class PopularListCard extends StatefulWidget {
   final PopularData popularData;
   final int ranking;
 
-  const PopularListTile({super.key, required this.popularData, required this.ranking});
+  const PopularListCard({super.key, required this.popularData, required this.ranking});
 
   @override
-  _PopularListTileState createState() => _PopularListTileState();
+  _PopularListCardState createState() => _PopularListCardState();
 }
 
-class _PopularListTileState extends State<PopularListTile> {
+class _PopularListCardState extends State<PopularListCard> {
   @override
   Widget build(BuildContext context) {
     String stockProfitStr = widget.popularData.stockProfit;
