@@ -11,11 +11,6 @@ class PopularListView extends StatefulWidget {
 }
 
 class _PopularListViewState extends State<PopularListView> {
-  List<PopularData> popularDataList = List.generate(
-    10,
-        (index) => PopularData(stockIcon: const Icon(Icons.map), stockName: 'Item $index', stockPrice: index, stockProfit: index),
-  );
-
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
