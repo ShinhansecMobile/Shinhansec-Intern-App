@@ -13,7 +13,7 @@ class _PopularListState extends State<PopularList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.fromLTRB(31, 0, 31, 0), // 배경색 설정
+      margin: const EdgeInsets.fromLTRB(31, 0, 31, 0),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget> [

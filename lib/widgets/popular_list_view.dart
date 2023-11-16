@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/popular_data.dart';
-import 'popular_list_tile.dart';
+import 'popular_list_card.dart';
 
 class PopularListView extends StatefulWidget {
   const PopularListView({super.key});
@@ -31,7 +31,7 @@ class _PopularListViewState extends State<PopularListView> {
             int ranking = popularDataList.indexOf(item) + 1;
 
             return Expanded(
-              child: PopularListTile(popularData: item, ranking: ranking,),
+              child: PopularListCard(popularData: item, ranking: ranking,),
             );
           }).toList(),
         );

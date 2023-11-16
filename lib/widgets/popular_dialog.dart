@@ -65,7 +65,7 @@ class _PopularDialogState extends State<PopularDialog> {
                 Navigator.pop(context);
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xFF8863E4), // 원하는 색상으로 변경
+                backgroundColor: Color(0xFF8863E4), // 버튼 배경색 설정
               ),
               child: const Text('매수')
             ),
@@ -75,7 +75,7 @@ class _PopularDialogState extends State<PopularDialog> {
                 Navigator.pop(context);
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white.withOpacity(0.6), // 원하는 색상으로 변경
+                backgroundColor: Colors.white.withOpacity(0.6), // 버튼 배경색 설정
               ),
               child: const Text('매도', style: TextStyle(fontSize: 14, color: Color(0xFF606060))),
             ),
