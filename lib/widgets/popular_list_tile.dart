@@ -79,6 +79,6 @@ class _PopularListTileState extends State<PopularListTile> {
           ),
         ),
       ),
-    ); // TODO : ADD Dialog Event */
+    );
   }
 }

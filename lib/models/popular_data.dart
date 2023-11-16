@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
 class PopularData {
-  final Icon stockIcon;
-  final String stockName;
-  final String stockPrice;
-  final String stockProfit;
+  final Icon stockIcon; // 주식 종목 아이콘
+  final String stockName; // 주식 종목 이름
+  final String stockPrice; // 주식 종목 가격
+  final String stockProfit; // 주식 종목 등락률
 
-  PopularData({
+  PopularData({ // 아이콘이 필요한 생성자
     required this.stockIcon,
     required this.stockName,
     required this.stockPrice,
     required this.stockProfit,
   });
 
-  PopularData.withoutIcon({
+  PopularData.withoutIcon({ // 주식 종목 등락률에 따라 아이콘이 결정되는 생성자
     required this.stockName,
     required this.stockPrice,
     required this.stockProfit,
